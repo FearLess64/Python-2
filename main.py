@@ -1,4 +1,6 @@
+from ast import main
 import math
+import os
 
 #რიცხვის ფაქტორიალის პოვნა
 def factorial(n):
@@ -79,6 +81,9 @@ def find_divisors(n):
             divisors.append(i)
     return divisors
 
+while True:
+    os.system("cls" if os.name == "nt" else "clear")
+
 
 # მენიუ
 print("მენიუ:")
@@ -127,3 +132,5 @@ while True:
     else:
         print("არასწორი არჩევანი. სცადეთ ხელახლა.")
 
+if __name__ == "__main__":
+  main()
